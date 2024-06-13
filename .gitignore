@@ -1,3 +1,4 @@
 
 *.ipynb
 .DS_Store
+.ipynb_checkpoints/oecs_checker-checkpoint.py
