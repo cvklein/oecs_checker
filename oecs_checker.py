@@ -1,7 +1,18 @@
 from docx import Document
 import sys
 
+
+
 filename = sys.argv[1]
+
+try:
+    f = open(filename,'r')
+    f.close()
+except FileNotFoundError:
+    print(filename,"not found, aborting")
+    exit() 
+
+
 document = Document(filename)
 correct_order = ["History","Core concepts","Questions, controversies, and new developments","Broader connections",
                  "Further reading","References"]
