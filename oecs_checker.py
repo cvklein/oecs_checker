@@ -57,6 +57,10 @@ for p in document.paragraphs:
 print()
 print()
 
+if len(styles_list) == 0:
+    print("ONLY NORMAL STYLES FOUND, FIX STYLES ON TITLES AND HEADERS")
+    exit()
+
 if nonstandard_warning:
     print("WARNING NONSTANDARD STYLES FOUND, SEE ABOVE")
 if empty_style_warning:
