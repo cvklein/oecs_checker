@@ -102,5 +102,10 @@ elif len(heading_list) < len(correct_order):
     print("APPEARS TO BE MISSING",missing)
 else:
     print("SECTION LIST IS TOO LONG")
+    print()
     print("SHOULD READ",correct_order)
+    print()
     print("ACTUALLY READS",heading_list)
+    print()
+    excess = set(heading_list) - set(correct_order)
+    print("EXTRA HEADERS APPEAR TO BE", excess)
