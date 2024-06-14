@@ -89,8 +89,13 @@ elif len(heading_list) == len(correct_order):
             print("SECTION POSITION",i,"SHOULD READ","["+c+"]","ACTUALLY READS","["+h+"]")
 elif len(heading_list) < len(correct_order):
     print("SECTION LIST IS TOO SHORT")
+    print()
     print("SHOULD READ",correct_order)
+    print()
     print("ACTUALLY READS",heading_list)
+    print()
+    missing = set(correct_order) - set(heading_list)
+    print("APPEARS TO BE MISSING",missing)
 else:
     print("SECTION LIST IS TOO LONG")
     print("SHOULD READ",correct_order)
