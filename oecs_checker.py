@@ -65,12 +65,12 @@ if nonstandard_warning:
     print("WARNING NONSTANDARD STYLES FOUND, SEE ABOVE")
 if empty_style_warning:
     print("WARNING EMPTY STYLED LINES FOUND SEE ABOVE")
-if styles_list.count("Title") < 0:
-    print("MISSING TITLE STYLE")
+
+if styles_list[0]!="Title":
+    print("TITLE MISSING OR NOT FIRST")
 elif styles_list.count("Title") > 1:
     print("MORE THAN ONE TITLE STYLE")
-elif styles_list[0]!="Title":
-    print("TITLE NOT FIRST")
+
 else:
     print("-Title present and correctly located")
 
