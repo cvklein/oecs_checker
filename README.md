@@ -26,12 +26,11 @@ colin.klein@anu.edu.au
 
 
 Example run:
-
-`github/oecs_checker~ % python oecs_checker.py test/Incorrect_sections.docx  
+```
+github/oecs_checker~ % python oecs_checker.py test/Incorrect_sections.docx   
 Title : This article has incorrect sections  
-Subtitle : Bad author (000000)  
-Subtitle : Barish-Estranza Corporate R&D  
-nnn  
+Subtitle : Bad author (000000)   
+Subtitle : Barish-Estranza Corporate R&D   
 Heading 1 : The Distant Past  
 nn  
 Heading 1 : Core concepts
@@ -56,4 +55,5 @@ n
 SECTION POSITION 0 SHOULD READ [History] ACTUALLY READS [The Distant Past]  
 SECTION POSITION 2 SHOULD READ [Questions, controversies, and new developments] ACTUALLY READS [Questions, controversies, and awesome stuff]  
 SECTION POSITION 4 SHOULD READ [Further reading] ACTUALLY READS [Key references]  
-SECTION POSITION 5 SHOULD READ [References] ACTUALLY READS [Bibliography]`  
+SECTION POSITION 5 SHOULD READ [References] ACTUALLY READS [Bibliography]
+```
