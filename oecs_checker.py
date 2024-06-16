@@ -15,7 +15,7 @@ except FileNotFoundError:
 
 document = Document(filename)
 correct_order = ["History","Core concepts","Questions, controversies, and new developments","Broader connections",
-                 "Further reading","References","Keywords"]
+                 "Further reading","References","Keywords:"]
 acceptable_styles = ["title","subtitle","normal","heading 1","heading 2"]
 
 heading_list = []
