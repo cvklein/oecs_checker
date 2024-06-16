@@ -11,7 +11,9 @@ To run: `python oecs_checker.py target_document.docx`.
 
 This will output a list of styled headings (both the style and the content of the heading). Normal-styled paragraphs will appear as 'n'. This will give you a high-level overview of the document. Then it will flag common problems: missing sections, wrong section heading names, unusual styles, etc. If things are very wrong, it may not catch all errors. Run it again after editing until it passes.
 
-The `test/` directory contains several example files that you can try it on. `test/Good.docx` is correctly formatted as per the current template. Other files show a variety of errors.
+*Important Note:* If you make changes while using track changes, this script doesn't seem to pick up on them until the changes are accepted. I would suggest getting template verified first without track changes.
+
+The `test/` directory contains several example files that you can try the script on. `test/Good.docx` is correctly formatted as per the current template. Other files demonstrate a variety of errors.
 
 This has been built using the OECS template of 15 June 2024. It will need to be updated if the template changes.
 
